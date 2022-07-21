@@ -1,4 +1,4 @@
-{% set version = "0.81" %}
+{% set version = "0.82" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/MetaSKAT_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/MetaSKAT/MetaSKAT_{{ version }}.tar.gz
-  sha256: 449bdd336f3a41b6964b38b33411f1b8a9cabfa3fbcf46486d6f7d35e91e98db
+  sha256: 9459546401a4d016fc0b37507f65f3444805a1c75a048df18ac472ab5d1f7231
 
 build:
   merge_build_host: true  # [win]
